@@ -1,1 +1,91 @@
+  <html lang="en">
+  <head>
+
+
+<style>
+body{
+font-family: sans-serif;
+padding-left: 20%;
+padding-right: 20%;
+
+}
+label{
+  font-size: 18px;
+  display: block;
+  padding-bottom: 10px;
+}
+input, textarea, select{
+  display: block;
+  width: 100%;
+  padding-bottom: 20px;
+}
+textarea{
+  display: block;
+  width: 100%;
+}
+form{
+  background-color:#CC0000;
+  padding: 40px 40px 40px 40px;
+}
+#radio-button-area{
+  float: left;
+  width: 50%;
+  height: 50%;
+}
+  </style>
+
+  </head>
+<body>
 <h1 id="title"> Whats you're Thoughts On Music</h1>
+<p id="description">This is a survey that displays the music your moved by.
+</p>
+  <form id="survey form">
+  <label id="name-label">Name:</label>
+   <input type="text" name="name" id="name" required placeholder="First Name"><br>
+
+  <label id="email-label">Email:</label>
+   <input type="email" name="email" id="email" required placeholder=" Best Email"><br>
+  <label id="number-label">Number:</label>
+
+   <input type="number" name="number" id="number" min="0" max="10" required placeholder="$"><br>
+   <label for="music">Choose a Genre Music:</label>
+
+<label id="music-type-label">Music Type:</label>
+   <select  id="dropdown"name="Music">
+     <option value="rnb">RnB</option>
+     <option value="jazz">Jazz</option>
+     <option value="90's rap">90's Rap</option>
+     <option value="gangster rap">Gangster Rap</option>
+   </select>
+  <label id="additional-comments-label">Commentary:</label>
+  <input type="textarea" placeholder="Any Additional Comments"></textarea><br>
+
+
+   <div id="button-area">
+  <label id="gender-label">Gender:</label>
+   <input type="radio" class="radio-inline" name="gender" value="male">Male<br>
+   <input type="radio" class="radio-inline" name="gender" value="female">Female<br>
+   <input type="radio" class="radio-inline" name="gender" value="other">Other<br>
+    </div>
+
+
+    <div id="button-area">
+      <label id="music feeling-type">Feeling:</label>
+    <input type="checkbox" id="rnb" name="how i feel about rnb" value="rnb rating">
+    <label for="rnb feeling"> Out of 10 I Feel This About RnB.</label><br>
+    <input type="checkbox" id="jazz" name="how i feel about jazz" value="jazz rating">
+    <label for="jazz feeling">Out of 10 I Feel This About Jazz.</label><br>
+    <input type="checkbox" id="90's rap" name="how i feel about 90's rap" value="90's rap rating">
+    <label for="90's rap">Out of 10 I feel This About 90's Rap.</label><br>
+    <input type="checkbox" id="gangster rap" name="how i feel about gangster rap" value="gangster rap rating">
+    <label for="gangster rap">Out of 10 I feel This About Gangster Rap.</label><br>
+    </div>
+
+    <input type="textarea" placeholder="Any Additional Comments">
+
+
+  <input type="submit" id"submit">
+  </form>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">>
+  </body>
+  </html>
